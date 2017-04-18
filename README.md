@@ -1,4 +1,4 @@
-# Azure Resource Manager Doc Shortcuts
+# Azure Resource Manager Schema Shortcuts
 
 ## Features
 

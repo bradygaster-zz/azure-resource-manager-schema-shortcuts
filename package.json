@@ -1,6 +1,6 @@
 {
-    "name": "azure-resource-manager-doc-shortcuts",
-    "displayName": "Azure Resource Manager Doc Shortcuts",
+    "name": "azure-resource-manager-schema-shortcuts",
+    "displayName": "Azure Resource Manager Schema Shortcuts",
     "description": "",
     "version": "0.0.1",
     "publisher": "bradygaster",
