@@ -1,13 +1,18 @@
 var vscode = require('vscode');
-const datafile = 'arm-rp-list.txt';
+var path = require('path');
+var datafile = 'arm-rp-list.txt';
 const url_prefix = 'https://docs.microsoft.com/en-us/azure/templates/';
 
 exports.deactivate = {};
 
 exports.activate = (context) => {
 
+    datafile = path.join(context.extensionPath, datafile);
+    console.log(datafile);
+    
     var fs = require('fs');
-    var searchTerms = fs.readFileSync(datafile, 'utf-8').split('\n');
+    var c = fs.readFileSync(datafile, 'utf-8');
+    var searchTerms = c.split('\n');
 
     var activeEditor = vscode.window.activeTextEditor;
     var timeout = null;
